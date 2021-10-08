@@ -1,0 +1,22 @@
+{
+    "checkpoint_path": "./checkpoints/",
+    "word2vec_path": "./word2vec/",
+    "data_path": "./preprocessed/",
+    "word2vec_name": "20211003_vocab_size_240594_emb_dim_99_min_freq_4.model",
+    "learning_rate": 0.001,
+    "max_content": 700,
+    "max_output": 28,
+    "vector_dim": 200,
+    "batch_size": 25,
+    "max_epoch": 8,
+    "valid_step": 1000,
+    "report_step": 100,
+    "use_additive_attention": true,
+    "teacher_forcing_max_ratio": 1.0,
+    "teacher_forcing_decay": 0.1,
+    "teacher_forcing_decay_step": 1300,
+    "teacher_forcing_min_ratio": 0.1,
+    "gpus": [0],
+    "scheduled_sampling_step": [1200, 2300, 3200, 3800, 4000, 5600, 8000, 11200, 15200, 20000],
+    "teacher_forcing_ratio": [0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.05]
+}
